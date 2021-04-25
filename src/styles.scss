@@ -1,4 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
 
+
 /* Importing Bootstrap SCSS file. */
+
 @import '~bootstrap/scss/bootstrap';
+@import "~font-awesome/css/font-awesome.css";
+// red: #FF6F70, violet: #293165
+.main-wrapper {
+    padding: 0 150px !important;
+}
+
+.contant {
+    h3 {
+        color: #293165;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 45px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+.img-contant {
+    text-align: center;
+    margin: auto;
+    div img {
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+.navbar-toggler {
+    background-color: white !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .row.odd-row {
+        display: table !important;
+        .contant {
+            display: table-footer-group !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-wrapper {
+        padding: 0 70px !important;
+    }
+}

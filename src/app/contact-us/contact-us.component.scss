@@ -1,8 +1,41 @@
+.contact-us-header {
+    background-image: url(../../assets/images/bg/bulb.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+    top: -150px;
+    // width: 100vw;
+    filter: brightness(0.5);
+    overflow-x: hidden;
+}
+
+.contact-us-hdr-text {
+    position: absolute;
+    width: 100%;
+    height: 140.52px;
+    bottom: 76px;
+    // margin: auto;
+    left: 0;
+    padding: 0 150px;
+    p {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 55px;
+        /* or 115% */
+        // text-align: center;
+        color: white;
+        opacity: 1 !important;
+    }
+}
+
 .request-demo {
-    background-color: #FF6F70;
+    background-color: rgba(87, 87, 92, 0.2);
     padding: 80px 150px;
     h3 {
-        color: #EAEFF0;
+        color: #293165;
         font-style: normal;
         font-weight: normal;
         font-size: 45px;
@@ -27,7 +60,7 @@
         color: #c0c0c0;
     }
     p {
-        color: #EAEFF0;
+        color: #293165;
         letter-spacing: 5px;
     }
     button {

@@ -1,0 +1,36 @@
+.header-wrapper {
+    padding: 30px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: transparent;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    margin: 0 8px;
+    .nav-link {
+        cursor: pointer;
+        color: white;
+        letter-spacing: 2px;
+        font-weight: normal;
+    }
+    .active {
+        border-bottom: 1px solid white;
+    }
+}
+
+.req-demo {
+    // position: absolute;
+    // right: 0;
+}
+
+.request-demo {
+    background: #FF6F70;
+    border-radius: 36px;
+    letter-spacing: 2px !important;
+    width: 193px;
+    height: 45px;
+    text-align: center;
+    padding-top: 10px;
+}

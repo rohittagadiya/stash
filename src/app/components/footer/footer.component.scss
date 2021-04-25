@@ -1,0 +1,35 @@
+.footor {
+    background: #293165;
+    padding: 80px 150px;
+    div {
+        p:first-child {
+            text-transform: uppercase;
+            border-bottom: 1px solid indianred;
+            padding-bottom: 5px;
+            margin-bottom: 18px;
+            display: inline-block;
+            letter-spacing: 4px;
+        }
+        p:not(:first-child) {
+            margin-bottom: 6px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .mt-50 {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .footor {
+        text-align: center !important;
+        padding: 80px;
+    }
+    .mtt-50 {
+        margin-top: 50px;
+    }
+}

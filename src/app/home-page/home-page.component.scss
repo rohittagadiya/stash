@@ -1,0 +1,30 @@
+.home-header {
+    background-image: url(../../assets/images/bg/blue_building.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 793px;
+    position: relative;
+    top: -150px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.home-hdr-text {
+    position: absolute;
+    width: 880px;
+    height: 140.52px;
+    bottom: 9px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    p {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 55px;
+        /* or 115% */
+        text-align: center;
+        color: #F5DA7B;
+    }
+}

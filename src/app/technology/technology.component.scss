@@ -1,0 +1,32 @@
+.techno-header {
+    background-image: url(../../assets/images/bg/technology.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+    top: -150px;
+    // width: 100vw;
+    filter: brightness(0.5);
+    overflow-x: hidden;
+}
+
+.techo-hdr-text {
+    position: absolute;
+    width: 100%;
+    height: 140.52px;
+    bottom: 76px;
+    // margin: auto;
+    left: 0;
+    padding: 0 150px;
+    p {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 55px;
+        /* or 115% */
+        // text-align: center;
+        color: white;
+        opacity: 1 !important;
+    }
+}
