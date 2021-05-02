@@ -6,6 +6,11 @@
 @import '~bootstrap/scss/bootstrap';
 @import "~font-awesome/css/font-awesome.css";
 // red: #FF6F70, violet: #293165
+@mixin h3-style($color: '#00000', $fSize: 15px) {
+    color: $color !important;
+    font-size: $fSize !important;
+}
+
 .main-wrapper {
     padding: 0 150px !important;
 }
@@ -22,6 +27,58 @@
     }
 }
 
+.tech-contant-1 {
+    h3 {
+        @include h3-style(#57575C, 36px)
+    }
+    p {
+        @include h3-style(grey, 16px)
+    }
+}
+
+.tech-contant-2 {
+    h3 {
+        @include h3-style(#FF6F70, 36px)
+    }
+    p {
+        @include h3-style(grey, 16px)
+    }
+}
+
+.tech-contant-3 {
+    h3 {
+        @include h3-style(#293165, 36px)
+    }
+    p {
+        @include h3-style(grey, 16px)
+    }
+}
+
+.tech-contant-4 {
+    h3 {
+        @include h3-style(#FA5F92, 36px)
+    }
+    p {
+        @include h3-style(grey, 16px)
+    }
+}
+
+.platform-contant {
+    h3 {
+        @include h3-style(#293165, 45px)
+    }
+    p {
+        @include h3-style(grey, 16px)
+    }
+    .p-title {
+        @include h3-style(grey, 24px)
+    }
+}
+
+.title {
+    @include h3-style(#293165, 36px)
+}
+
 .img-contant {
     text-align: center;
     margin: auto;
@@ -35,6 +92,36 @@
     background-color: white !important;
 }
 
+.platform-hdr-text {
+    position: absolute;
+    width: 100%;
+    height: 140.52px;
+    bottom: 76px;
+    // margin: auto;
+    left: 0;
+    padding: 0 150px;
+    p:first-child {
+        color: white;
+        font-weight: 800;
+        font-size: 64px;
+    }
+    p:not(:first-child) {
+        font-size: 12px;
+        color: #F4F4ED;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+}
+
+.tech-contant-1,
+.tech-contant-2,
+.tech-contant-3,
+.tech-contant-4 {
+    img {
+        width: 150px;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .row.odd-row {
         display: table !important;
@@ -42,10 +129,75 @@
             display: table-footer-group !important;
         }
     }
+    .home-hdr-text {
+        width: 60% !important;
+        p {
+            font-size: 30px !important;
+            line-height: 30px !important;
+        }
+    }
+    .techo-hdr-text,
+    .contact-us-hdr-text {
+        padding: 0 100px !important;
+    }
 }
 
 @media only screen and (max-width: 767px) {
     .main-wrapper {
-        padding: 0 70px !important;
+        padding: 0 60px !important;
+    }
+    .home-hdr-text {
+        width: 80% !important;
+        p {
+            font-size: 20px !important;
+            line-height: 30px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .techo-hdr-text,
+    .contact-us-hdr-text {
+        padding: 0 30px !important;
+        p {
+            font-size: 30px !important;
+        }
+    }
+    .platform-hdr-text {
+        padding: 0 30px !important;
+        p:first-child {
+            font-size: 48px !important;
+        }
+    }
+    .tech-contant-1,
+    .tech-contant-2,
+    .tech-contant-3,
+    .tech-contant-4 {
+        div {
+            padding: 20px 0 !important;
+            h3 {
+                font-size: 30px !important;
+            }
+        }
+    }
+    .platform-contant {
+        h3 {
+            font-size: 36px !important;
+        }
+        div {
+            padding: 0 !important;
+        }
+    }
+    .platform-content {
+        div {
+            padding: 0 !important;
+            img {
+                height: 30px !important;
+            }
+        }
+    }
+    .title {
+        font-size: 22px !important;
+        margin-bottom: 20px;
     }
 }

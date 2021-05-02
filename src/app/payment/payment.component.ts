@@ -10,6 +10,7 @@ export class PaymentComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.documentElement.scrollTop = 0;
   }
 
 }

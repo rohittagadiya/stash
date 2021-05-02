@@ -1,4 +1,93 @@
-<div class="main-wrapper">
+<div class="w-100">
+    <ul class="l-mob-menu-container" id="mobmenu">
+        <li class="nav-item">
+            <a (click)="goToHome()" class="nav-link" [ngClass]="router.url == '/' || router.url == '/home-page' ? 'active' : ''" href="#">Home
+                <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a (click)="goToPlatform()" [ngClass]="router.url == '/platform' ? 'active' : ''" class="nav-link">Platform</a>
+        </li>
+        <li class="nav-item">
+            <a (click)="goToTechnology()" [ngClass]="router.url == '/technology' ? 'active' : ''" class="nav-link">Technology</a>
+        </li>
+        <li class="nav-item">
+            <a (click)="goToPayment()" [ngClass]="router.url == '/payment' ? 'active' : ''" class="nav-link">Payment</a>
+        </li>
+        <li class="nav-item">
+            <a (click)="goToContact()" [ngClass]="router.url == '/contact-us' ? 'active' : ''" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item req-demo">
+            <a (click)="goToContact()" class="nav-link">Request demo</a>
+        </li>
+    </ul>
+    <div class="overlay" style="display: none;"></div>
+    <div class="l-transition-5 l-header-big" id="docHeader">
+        <div class="col-12 col-lg-9 col-md-11 col-sm-11 l-min-md-pd m-auto">
+            <a href="./">
+                <div class="l-logo-div float-left"> <img src="./assets/logo/STASH.png" data-src="./assets/logo/STASH.png" alt="image not available" id="brand_logo1" name="brand-img1" class="l-blue-logo"> <img src="./assets/logo/STASH.png" data-src="./assets/logo/STASH.png" id="brand_logo2"
+                        name="brand-img2" alt="image not available" class="l-wht-logo"> <img src="./assets/logo/STASH.png" id="brand_logo3" name="brand-img3" alt="image not available" class="l-white-logo"></div>
+            </a>
+            <div class="float-right l-menu align-items-center">
+                <ul class="l-menu-container">
+                    <li class="nav-item">
+                        <a (click)="goToHome()" class="nav-link" [ngClass]="router.url == '/' || router.url == '/home-page' ? 'active' : ''" href="#">Home
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a (click)="goToPlatform()" [ngClass]="router.url == '/platform' ? 'active' : ''" class="nav-link">Platform</a>
+                    </li>
+                    <li class="nav-item">
+                        <a (click)="goToTechnology()" [ngClass]="router.url == '/technology' ? 'active' : ''" class="nav-link">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a (click)="goToPayment()" [ngClass]="router.url == '/payment' ? 'active' : ''" class="nav-link">Payment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a (click)="goToContact()" [ngClass]="router.url == '/contact-us' ? 'active' : ''" class="nav-link">Contact</a>
+                    </li>
+                    <!-- <li class="nav-item req-demo">
+                        <a (click)="goToContact()" class="nav-link request-demo">Request demo</a>
+                    </li> -->
+                </ul>
+                <a href="#request_demo" id="rlp-link"> <button class="l-signup-btn request-demo" name="signup-btn" id="rlp-btn-txt">
+                        <span>Request demo</span> </button> </a>
+            </div>
+            <div class="float-right l-mob-menu" id="mob-menu"> <button class="l-transparent-button"> <span> <svg
+                            class="l-sm-white" xmlns="http://www.w3.org/2000/svg" version="1.0" width="1024.000000pt"
+                            height="1024.000000pt" viewBox="0 0 1024.000000 1024.000000"
+                            preserveAspectRatio="xMidYMid meet" style="height: 20px; width: 20px;">
+                            <g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)" fill="#ffffff"
+                                stroke="none">
+                                <path
+                                    d="M355 9703 c-159 -35 -273 -138 -325 -294 -29 -83 -25 -225 8 -309 44 -112 134 -200 249 -243 l58 -22 4730 -3 c3267 -2 4751 1 4799 8 142 22 250 100 313 228 38 76 38 76 38 201 0 122 -1 128 -32 192 -60 122 -155 202 -278 234 -53 13 -558 15 -4800 14 -2607 -1 -4749 -3 -4760 -6z" />
+                                <path
+                                    d="M300 6921 c-75 -24 -96 -36 -153 -90 -94 -87 -137 -188 -137 -320 0 -186 89 -327 255 -403 l50 -23 4790 -3 c4703 -2 4791 -2 4847 17 110 37 192 113 245 227 26 55 28 68 28 184 0 114 -2 130 -26 180 -54 113 -146 196 -256 230 -65 20 -80 20 -4827 19 -4525 0 -4764 -1 -4816 -18z" />
+                                <path
+                                    d="M315 4166 c-120 -38 -206 -115 -263 -234 -36 -75 -37 -80 -37 -192 0 -95 4 -124 23 -170 44 -111 141 -207 252 -253 l55 -22 4745 -3 c3360 -1 4760 1 4797 9 130 26 247 121 306 246 26 57 32 83 35 161 5 116 -15 198 -67 280 -48 73 -99 117 -181 156 l-65 31 -4780 2 c-3842 1 -4788 -1 -4820 -11z" />
+                                <path
+                                    d="M340 1399 c-140 -28 -259 -139 -311 -291 -28 -83 -23 -224 10 -311 43 -110 132 -196 249 -241 l57 -21 4735 -3 c3384 -2 4754 0 4800 8 141 24 245 101 307 228 38 76 38 76 38 201 0 123 -1 128 -34 196 -60 123 -172 211 -300 235 -68 13 -9485 12 -9551 -1z" />
+                            </g>
+                        </svg> </span> <span> <svg class="l-sm-blue" xmlns="http://www.w3.org/2000/svg" version="1.0"
+                            width="1024.000000pt" height="1024.000000pt" viewBox="0 0 1024.000000 1024.000000"
+                            preserveAspectRatio="xMidYMid meet" style="height: 20px; width: 20px;">
+                            <g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)" fill="#1eb2f6"
+                                stroke="none">
+                                <path
+                                    d="M355 9703 c-159 -35 -273 -138 -325 -294 -29 -83 -25 -225 8 -309 44 -112 134 -200 249 -243 l58 -22 4730 -3 c3267 -2 4751 1 4799 8 142 22 250 100 313 228 38 76 38 76 38 201 0 122 -1 128 -32 192 -60 122 -155 202 -278 234 -53 13 -558 15 -4800 14 -2607 -1 -4749 -3 -4760 -6z" />
+                                <path
+                                    d="M300 6921 c-75 -24 -96 -36 -153 -90 -94 -87 -137 -188 -137 -320 0 -186 89 -327 255 -403 l50 -23 4790 -3 c4703 -2 4791 -2 4847 17 110 37 192 113 245 227 26 55 28 68 28 184 0 114 -2 130 -26 180 -54 113 -146 196 -256 230 -65 20 -80 20 -4827 19 -4525 0 -4764 -1 -4816 -18z" />
+                                <path
+                                    d="M315 4166 c-120 -38 -206 -115 -263 -234 -36 -75 -37 -80 -37 -192 0 -95 4 -124 23 -170 44 -111 141 -207 252 -253 l55 -22 4745 -3 c3360 -1 4760 1 4797 9 130 26 247 121 306 246 26 57 32 83 35 161 5 116 -15 198 -67 280 -48 73 -99 117 -181 156 l-65 31 -4780 2 c-3842 1 -4788 -1 -4820 -11z" />
+                                <path
+                                    d="M340 1399 c-140 -28 -259 -139 -311 -291 -28 -83 -23 -224 10 -311 43 -110 132 -196 249 -241 l57 -21 4735 -3 c3384 -2 4754 0 4800 8 141 24 245 101 307 228 38 76 38 76 38 201 0 123 -1 128 -34 196 -60 123 -172 211 -300 235 -68 13 -9485 12 -9551 -1z" />
+                            </g>
+                        </svg> </span> </button></div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="main-wrapper w-100">
     <nav class="navbar navbar-expand-sm header-wrapper">
         <a class="navbar-brand">
             <svg width="250" height="80" viewBox="0 0 218 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,4 +213,4 @@
             </ul>
         </div>
     </nav>
-</div>
+</div> -->

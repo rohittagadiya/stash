@@ -10,6 +10,7 @@ export class PlatformComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.documentElement.scrollTop = 0;
   }
 
 }

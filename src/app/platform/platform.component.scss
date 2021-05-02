@@ -1,11 +1,26 @@
 .techno-header {
-    background-image: url(../../assets/images/bg/technology.png);
+    background-image: url(../../assets/images/bg/bulb.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
     position: relative;
-    top: -150px;
+    top: 0px;
     // width: 100vw;
-    filter: brightness(0.5);
+    // filter: brightness(0.5);
     overflow-x: hidden;
+}
+
+.platform-content {
+    img {
+        height: 40px;
+    }
+    ul {
+        margin-top: 10px;
+        padding-left: 18px;
+        li {
+            padding: 8px 0;
+            color: #57575C !important;
+            font-size: 14px;
+        }
+    }
 }
